@@ -2,13 +2,32 @@
 
 <h1>Applications</h1>
 
-<div id="applications">
-  <% @applications.each do |application| %>
-    <%= render application %>
-    <p>
-      <%= link_to "Show this application", application %>
-    </p>
-  <% end %>
-</div>
+<table class="table table-striped table-hover table-bordered">
+  <thead>
+    <tr>
+      <th>Status</th>
+      <th>Payment Made</th>
+      <th>Applicant Id</th>
+      <th>Academic Announcement Id</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @applications.each do |application| %>
+      <tr>
+        <td><%= application.status %></td>
+        <td><%= application.payment_made %></td> 
+        <td><%= application.applicant.id %></td>
+        <td><%= application.acadamic_announcement.id %></td>
+        <td>
+          <%= link_to "Show", application %>
+          &nbsp;
+          <%= link_to "Edit", edit_application_path(application) %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
 
-<%= link_to "New application", new_application_path %>
+</table>
+
+<%= link_to "New application", new_application_path, class: "btn btn-primary" %>

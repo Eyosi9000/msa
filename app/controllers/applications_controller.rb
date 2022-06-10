@@ -25,7 +25,7 @@ class ApplicationsController < ApplicationController
 
     respond_to do |format|
       if @application.save
-        format.html { redirect_to application_url(@application), notice: "Application was successfully created." }
+        format.html { redirect_to applications_url, notice: "Application was successfully created." }
         format.json { render :show, status: :created, location: @application }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class ApplicationsController < ApplicationController
   def update
     respond_to do |format|
       if @application.update(application_params)
-        format.html { redirect_to application_url(@application), notice: "Application was successfully updated." }
+        format.html { redirect_to applications_url, notice: "Application was successfully updated." }
         format.json { render :show, status: :ok, location: @application }
       else
         format.html { render :edit, status: :unprocessable_entity }

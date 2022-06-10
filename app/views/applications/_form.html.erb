@@ -13,26 +13,28 @@
             </ul>
           </div>
         <% end %>
-        <div class="row">
+        <div class="row form-group">
           <div class="col-1">
             <%= form.label :status, style: "display: block" %>
             <%= form.text_field :status , class: "form-control"%>
           </div>
 
-          <div class="col1">
+          <div class="col-2">
             <%= form.label :payment_made, style: "display: block" %>
-            <%= form.check_box :payment_made , class: "form-control"%>
+            <%= form.check_box :payment_made %>
           </div>
 
           <div class="col-2">
             <%= form.label :applicant_id, style: "display: block" %>
-            <%= form.text_field :applicant_id , class: "form-control"%>
+            <%= form.select :applicant_id, options_for_select(Applicant.all.map{|s|[s.first_name, s.id]})%>
           </div>
 
-          <div class="col-2">
+
+          <div class="col-3">
             <%= form.label :acadamic_announcement_id, style: "display: block" %>
-            <%= form.text_field :acadamic_announcement_id , class: "form-control"%>
+            <%= form.select :acadamic_announcement_id, options_for_select(AcadamicAnnouncement.all.map{|s|[s.id, s.id]})%>
           </div>
+
 
           <div class="col-2">
             <%= form.submit class: "btn btn-primary"%>
