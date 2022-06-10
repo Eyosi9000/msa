@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <%= form_with(model: acadamic_program) do |form| %>
+        <% if acadamic_program.errors.any? %>
+          <div style="color: red">
+            <h2><%= pluralize(acadamic_program.errors.count, "error") %> prohibited this acadamic_program from being saved:</h2>
+
+            <ul>
+              <% acadamic_program.errors.each do |error| %>
+                <li><%= error.full_message %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+        <div class="row">
+          <div class="col-3">
+            <%= form.label :program_id, style: "display: block" %>
+            <%= form.select :program_id, options_for_select(Program.all.map{|s|[s.name, s.id]})%>
+          </div>
+
+          <div class="col-2">
+            <%= form.label :program_level_id, style: "display: block" %>
+            <%= form.select :program_level_id, options_for_select(ProgramLevel.all.map{|s|[s.name, s.id]})%>
+
+          </div>
+
+          <div class="col-2">
+            <%= form.label :program_type_id, style: "display: block" %>
+            <%= form.select :program_type_id, options_for_select(ProgramType.all.map{|s|[s.name, s.id]})%>
+
+          </div>
+
+          <div class="col-1">
+            <%= form.label :duration, style: "display: block" %>
+            <%= form.number_field :duration, in:1..7, class: "form-control" %>
+          </div>
+
+          <div class="col-3 mt-4">
+            <%= form.submit class: "btn btn-primary"%>
+          </div>
+          <%end%>
+        </div>
+    </div>
+  </div>
+</div>  
+

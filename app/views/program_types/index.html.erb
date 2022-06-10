@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Program types</h1>
+
+<div id="program_types">
+  <% @program_types.each do |program_type| %>
+    <%= render program_type %>
+    <p>
+      <%= link_to "Show this program type", program_type %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New program type", new_program_type_path %>

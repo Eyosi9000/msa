@@ -1,0 +1,33 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Acadamic programs</h1>
+
+<table class="table table-striped table-hover table-bordered">
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>Program Level</th>
+      <th>Program Type</th>
+      <th>Duration</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @acadamic_programs.each do |acadamic_program| %>
+      <tr>
+        <td><%= acadamic_program.program.name %></td>
+        <td><%= acadamic_program.program_level.name %></td> 
+        <td><%= acadamic_program.program_type.name %></td>
+        <td><%= acadamic_program.duration %></td>
+        <td>
+          <%= link_to "Show", acadamic_program %>
+          &nbsp;
+          <%= link_to "Edit", edit_acadamic_program_path(acadamic_program) %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+
+</table>
+
+<%= link_to "New acadamic program", new_acadamic_program_path %>

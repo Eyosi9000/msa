@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @acadamic_year %>
+
+<div>
+  <%= link_to "Edit this acadamic year", edit_acadamic_year_path(@acadamic_year) %> |
+  <%= link_to "Back to acadamic years", acadamic_years_path %>
+
+  <%= button_to "Destroy this acadamic year", @acadamic_year, method: :delete %>
+</div>

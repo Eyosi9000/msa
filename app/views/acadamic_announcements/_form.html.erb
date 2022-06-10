@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <%= form_with(model: acadamic_announcement) do |form| %>
+        <% if acadamic_announcement.errors.any? %>
+          <div style="color: red">
+            <h2><%= pluralize(acadamic_announcement.errors.count, "error") %> prohibited this acadamic_announcement from being saved:</h2>
+
+            <ul>
+              <% acadamic_announcement.errors.each do |error| %>
+                <li><%= error.full_message %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %> 
+        <div class="row">
+          <div class="col-2">
+            <%= form.label :start_date, style: "display: block" %>
+            <%= form.date_field :start_date, class: "form-control" %>
+          </div>
+
+          <div class="col-2">
+            <%= form.label :end_date, style: "display: block" %>
+            <%= form.date_field :end_date, class: "form-control" %>
+          </div>
+
+          <div class="col-1">
+            <%= form.label :status, style: "display: block" %>
+            <%= form.select :status, options_for_select(['open', 'closed'])%>
+          </div>
+
+          <div class="col-2">
+            <%= form.label :acadamic_program_id, style: "display: block" %>
+            <%= form.select :acadamic_program_id, options_for_select(AcadamicProgram.all.map{|s|[s.id, s.id]})%>
+          </div>
+
+          <div class="col-2">
+            <%= form.label :acadamic_year_id, style: "display: block" %>
+            <%= form.select :acadamic_year_id, options_for_select(AcadamicYear.all.map{|s|[s.year, s.id]})%>
+          </div>
+
+          <div class="col-2">
+            <%= form.submit class: "btn btn-primary mt-3"%>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

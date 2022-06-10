@@ -1,0 +1,200 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/mnt/c/Users/Eyosiyas/Documents/Education/Advanced Programming/msa/app/models/acadamic_announcement.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/Eyosiyas/Documents/Education/Advanced Programming/msa/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/Eyosiyas/Documents/Education/Advanced Programming/msa/app/models/acadamic_program.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/Eyosiyas/Documents/Education/Advanced Programming/msa/app/models/acadamic_year.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/Eyosiyas/Documents/Education/Advanced Programming/msa/app/models/applicant.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/Eyosiyas/Documents/Education/Advanced Programming/msa/app/models/program_level.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/Eyosiyas/Documents/Education/Advanced Programming/msa/app/models/program.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/Eyosiyas/Documents/Education/Advanced Programming/msa/app/models/program_type.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/Eyosiyas/Documents/Education/Advanced Programming/msa/app/controllers/applicants_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/Eyosiyas/Documents/Education/Advanced Programming/msa/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/Eyosiyas/Documents/Education/Advanced Programming/msa/app/channels/application_cable/channel.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/Eyosiyas/Documents/Education/Advanced Programming/msa/app/channels/application_cable/connection.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/Eyosiyas/Documents/Education/Advanced Programming/msa/app/helpers/applicants_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/Eyosiyas/Documents/Education/Advanced Programming/msa/app/helpers/application_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/Eyosiyas/Documents/Education/Advanced Programming/msa/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/Eyosiyas/Documents/Education/Advanced Programming/msa/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1653036247
+  }
+}

@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <%= form_with(model: application) do |form| %>
+        <% if application.errors.any? %>
+          <div style="color: red">
+            <h2><%= pluralize(application.errors.count, "error") %> prohibited this application from being saved:</h2>
+
+            <ul>
+              <% application.errors.each do |error| %>
+                <li><%= error.full_message %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+        <div class="row">
+          <div class="col-1">
+            <%= form.label :status, style: "display: block" %>
+            <%= form.text_field :status , class: "form-control"%>
+          </div>
+
+          <div class="col1">
+            <%= form.label :payment_made, style: "display: block" %>
+            <%= form.check_box :payment_made , class: "form-control"%>
+          </div>
+
+          <div class="col-2">
+            <%= form.label :applicant_id, style: "display: block" %>
+            <%= form.text_field :applicant_id , class: "form-control"%>
+          </div>
+
+          <div class="col-2">
+            <%= form.label :acadamic_announcement_id, style: "display: block" %>
+            <%= form.text_field :acadamic_announcement_id , class: "form-control"%>
+          </div>
+
+          <div class="col-2">
+            <%= form.submit class: "btn btn-primary"%>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

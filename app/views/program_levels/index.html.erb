@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Program levels</h1>
+
+<div id="program_levels">
+  <% @program_levels.each do |program_level| %>
+    <%= render program_level %>
+    <p>
+      <%= link_to "Show this program level", program_level %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New program level", new_program_level_path %>

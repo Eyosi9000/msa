@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @acadamic_program %>
+
+<div>
+  <%= link_to "Edit this acadamic program", edit_acadamic_program_path(@acadamic_program) %> |
+  <%= link_to "Back to acadamic programs", acadamic_programs_path %>
+
+  <%= button_to "Destroy this acadamic program", @acadamic_program, method: :delete %>
+</div>
